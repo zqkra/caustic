@@ -1,0 +1,28 @@
+caustic
+Copyright (c) 2026 Zakra Gaviria
+
+Everything here is original work under the MIT license, except the
+pieces listed below, which are adapted from the sources named.
+
+Signed distance functions in shader/caustic.frag.glsl
+  fBox (rounded box), fRoundCyl (rounded cylinder), fExtrude (extrusion
+  of a 2D distance) and fHex2 (hexagon) follow the formulas published by
+  Inigo Quilez at https://iquilezles.org/articles/distfunctions/ and
+  https://iquilezles.org/articles/distfunctions2d/.
+  The code snippets on that site are MIT licensed.
+  Copyright (c) Inigo Quilez.
+
+Integer hash used for dithering in shader/caustic.frag.glsl
+  The mixing constants are Chris Wellons' "lowbias32" from
+  https://github.com/skeeto/hash-prospector, released into the public
+  domain (Unlicense).
+
+Fresnel term
+  Schlick's approximation, C. Schlick, "An Inexpensive BRDF Model for
+  Physically-based Rendering", Computer Graphics Forum 13(3), 1994.
+
+Tone curve
+  tone() is our own least-squares fit. Its shape follows the ACES filmic
+  response, as approximated by Krzysztof Narkowicz ("ACES Filmic Tone
+  Mapping Curve", 2016). ACES is a trademark of the Academy of Motion
+  Picture Arts and Sciences; this project is not affiliated with it.
