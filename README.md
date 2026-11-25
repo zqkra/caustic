@@ -2,7 +2,9 @@
 
 solid glass icons that cast light.
 
-REEL
+![caustic](media/reel.gif)
+
+[full reel](media/reel.mp4)
 
 nine little objects made of colored glass. they refract, their edges shift color as they turn, and each one throws its own caustic on the table. hover one and it turns toward your cursor on springs.
 
